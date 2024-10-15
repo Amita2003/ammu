@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+   
+/* Soft gradient background */
+}
+body {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201016/pngtree-abstract-background-gaming-futuristic-banner-online-image_419160.jpg'); /* Specify the path to your image */
+    background-size: cover; /* This will make the background cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-color: rgba(255, 255, 255, 0.5); /* Optional: A fallback background color with transparency */
+}
+
+h1{
+    background-color: rgb(43, 122, 226);
+    color: rgb(155, 17, 97);
+    height: 4rem;
+    line-height: 4rem; 
+}
+.choice {
+    height: 170px;
+    width: 100px;
+    border-radius: 300px; /* Reduced border radius for a sleeker look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Very dark background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Stronger shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth color & scale transition */
+}
+
+img{
+    height: 145px;
+    width: 150px;
+    object-fit: cover; /* Ensures image fits within the box without distortion */
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+img:hover {
+    transform: scale(1.1); /* Slight zoom-in on hover */
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    margin: 20px 0;
+    margin-top: 3rem;
+}
+
+.choice:hover{
+    background-color: rgb(146, 47, 47);
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(196, 20, 20, 0.4); /* Added shadow on hover */
+    animation: pulse 0.7s infinite; /* Adds a pulse effect on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 2rem; /* Space out the score containers */
+    margin-top: 2rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff99cc; /* Glow effect for the score */
+}
+
+.msg-container{
+    margin-top: 4rem;
+}
+
+#msg {
+    background-color: #212121; /* Darker, almost black background */
+    color: #3b6fff; /* Bright yellow text for contrast */
+    font-size: 2rem;
+    text-align: center;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.score-container {
+    background-color: rgba(43, 57, 134, 0.8); /* Dark semi-transparent background */
+    color: #ffeb3b; /* Bright yellow text for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    width: 150px; /* Set a fixed width for the boxes */
+
+}
